@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="220dp"
+    android:layout_height="180dp"
+    android:layout_margin="15dp"
+    android:elevation="10dp"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/stock_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:gravity="center"
+                        android:text="Dow Jones"
+                        android:textColor="@color/grey_card"
+                        android:textSize="12sp"/>
+
+                    <TextView
+                        android:id="@+id/value_market"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:gravity="center"
+                        android:text="$35,819.56"
+                        android:textStyle="bold"
+                        android:textColor="@color/card_green"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/change_market"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:drawableStart="@drawable/ic_baseline_straight_24"
+                        android:drawableTint="@color/sea_green"
+                        android:gravity="center"
+                        android:text="0.25%"
+                        android:textColor="@color/sea_green"
+                        android:textSize="10sp" />
+
+
+                    <ImageView
+                        android:id="@+id/graph_market_iv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:src="@drawable/market_graph"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+</androidx.cardview.widget.CardView>
+
